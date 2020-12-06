@@ -1,0 +1,15 @@
+body {
+    color: black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+   
+}
+
+.pollution-box {
+    border: 1px solid black;
+    
+}
