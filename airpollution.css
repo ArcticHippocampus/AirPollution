@@ -1,15 +1,120 @@
+
+
+ @media screen and (max-device-width: 750px) {
+   
+  
+   .wrapper{
+       grid-template-columns:  1fr;
+   }
+   .air-card{
+       width: 100vw;
+   }
+  }
+
+
+
+
+
 body {
     color: black;
+    margin:auto;
+    font-family: 'Open Sans', sans-serif;;
+    
 }
 
-.wrapper {
+
+.site-wrap{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap:20px;
+    justify-content: center;
+    margin: 7vw;
+    grid-gap:20vh;
+}
+
+/*Header*/
+.header-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
    
 }
 
-.pollution-box {
-    border: 1px solid black;
+.amper {
+    display: flex;
+    flex-direction: row;
+    font-size: 2vw;
     
+   
+}
+.big-header {
+    font-size: 4vw;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.header-wrap p {
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+.header-wrap img{
+    max-width: 110%;
+    
+}
+/*Searchbar*/
+.searchbar{
+    justify-self: right;
+}
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+}
+
+
+.air-card {
+    display: flex;
+    max-width: 30vw;
+    max-height: 700px;
+  
+    color:white;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:1vw;
+    background: linear-gradient(0deg, rgba(255,143,15,1) 0%, rgba(252,185,49,1) 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.562);
+  
+    
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.card-header i {
+    font-size: 2vw;
+    padding: 5px;
+}
+
+.pollution-wrap{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   border-top:1px solid rgba(255, 255, 255, 0.418);
+   border-radius: 20px;
+
+}
+.pollution-box {
+   padding: 3px;
+    
+}
+.pollution-detail{
+    color: rgba(255, 255, 255, 0.664);
+}
+.aqi-description{
+    margin:auto;
+    padding: 5vw;
+    font-size:3vw;
+   
 }
