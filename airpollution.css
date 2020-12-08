@@ -27,7 +27,7 @@ body {
     display: grid;
     justify-content: center;
     margin: 7vw;
-    grid-gap:20vh;
+    grid-gap:10vh;
 }
 
 /*Header*/
@@ -48,6 +48,7 @@ body {
     font-size: 4vw;
     font-weight: 300;
     margin-bottom: 0;
+    margin-top:1px;
 }
 .header-wrap p {
     margin-right: 20px;
@@ -60,10 +61,28 @@ body {
 }
 /*Searchbar*/
 .searchbar{
-    justify-self: right;
+    text-align: center;
+    
 }
 
+#input {
+    border:10px  solid  #1ec49ab7;
+    padding:2vw;
+    border-right:none;
+    min-width: 70vw;
+    border-radius:15px
+}
 
+#submit{
+    border: 10px solid #1ec49ab7;
+    background-color: white;
+    color: #01d18f98;
+    margin:0;
+    padding: 2vw;
+    border-left:none;
+    border-radius:15px;
+   
+}
 
 .wrapper{
     display: grid;

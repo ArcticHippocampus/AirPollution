@@ -14,7 +14,7 @@ function addCard() {
 
 
 
-    fetch(`http://api.positionstack.com/v1/forward?access_key=30461e3d939eb3f770a5560ea8a3bd51&query=` + searchValue )
+    fetch(`https://api.positionstack.com/v1/forward?access_key=30461e3d939eb3f770a5560ea8a3bd51&query=` + searchValue )
 
     .then((response) => {
         return response.json();
@@ -28,7 +28,7 @@ function addCard() {
         
 
 
-        fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=` + latitude + `&lon=` + longitude + `&appid=995e325e5959ba5c700518b15a9562d7`)
+        fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=` + latitude + `&lon=` + longitude + `&appid=995e325e5959ba5c700518b15a9562d7`)
 
       .then((response) => {
         return response.json();
@@ -179,3 +179,15 @@ function removeCard(e){
 
 document.getElementById("bin").addEventListener('click', removeCard)
 searchButton.addEventListener('click', addCard) ;
+
+
+
+searchInput.addEventListener("keyup", function(event) {
+    
+    if (event.keyCode === 13) {
+     
+      event.preventDefault();
+      
+      searchButton.click();
+    }
+})
