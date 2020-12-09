@@ -75,7 +75,7 @@ function addCard() {
 
                     airQuailtyMeter(pollutionFile.list[0].main.aqi, aqiDescription, airCard);
 
-                    makingAPollutionBox(pollutionFile.list[0].components.co, 'Co', pollutionWrap);
+                    makingAPollutionBox(pollutionFile.list[0].components.co, 'Co', pollutionWrap, );
                     makingAPollutionBox(pollutionFile.list[0].components.nh3, 'Nh3', pollutionWrap);
                     makingAPollutionBox(pollutionFile.list[0].components.no, 'No', pollutionWrap);
                     makingAPollutionBox(pollutionFile.list[0].components.no2, 'No2', pollutionWrap);
@@ -108,7 +108,7 @@ function addCard() {
 
 
 
-function makingAPollutionBox(value, detail, wrap) {
+function makingAPollutionBox(value, detail, wrap, ) {
 
     let pollutionBox = document.createElement('div');
     wrap.appendChild(pollutionBox);
@@ -119,9 +119,9 @@ function makingAPollutionBox(value, detail, wrap) {
 
     let pollutionDetail = document.createElement('p');
     let pollutionValue = document.createElement('p');
-
     pollutionBox.appendChild(pollutionDetail);
     pollutionBox.appendChild(pollutionValue);
+
     pollutionDetail.innerHTML = detail;
     pollutionValue.innerHTML = value;
 
@@ -175,6 +175,7 @@ function firstSearch() {
     searchInput.value = ' ';
     searchInput.value = 'Pakistan';
     addCard();
+    searchInput.value = '';
 
 }
 
