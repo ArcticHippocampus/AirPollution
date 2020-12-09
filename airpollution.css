@@ -277,4 +277,7 @@ i:hover {
     #input {
         min-width: 60vw;
     }
+    .about{
+        margin:6vw;
+    }
 }
