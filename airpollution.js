@@ -21,10 +21,11 @@ function addCard() {
       })
       .then((data) => {
        
-
+        console.log(data);
         let file = data;
-        latitude = file.data[0].latitude;
-        longitude = file.data[0].longitude; 
+        latitude = file.results[0].geometry.lat;
+        console.log(latitude)
+        longitude = file.results[0].geometry.lng;
         
 
 
