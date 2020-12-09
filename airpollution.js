@@ -14,7 +14,7 @@ function addCard() {
 
 
 
-    fetch(`https://api.positionstack.com/v1/forward?access_key=30461e3d939eb3f770a5560ea8a3bd51&query=` + searchValue )
+    fetch(`https://api.opencagedata.com/geocode/v1/json?q=` + searchValue + `&key=95d35071ec34486aa741096bda8b8463`  )
 
     .then((response) => {
         return response.json();
